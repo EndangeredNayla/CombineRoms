@@ -11,8 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Add msbuild to PATH
-      uses: microsoft/setup-msbuild@v1.0.2
+    - uses: ilammy/msvc-dev-cmd@v1
     
     - name: Mkdir dist
       run: mkdir dist
