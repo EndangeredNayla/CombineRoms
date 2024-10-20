@@ -22,7 +22,7 @@ jobs:
 
     - name: Build (with ${{matrix.compiler}}, for ${{matrix.os}})
       shell: bash
-      run: make CC=/c/msys64/mingw64/bin/clang64.exe D:/a/CombineRoms/CombineRoms/combine_roms.c -o D:/a/CombineRoms/CombineRoms/combine_roms.exe
+      run: make CC=/c/msys64/mingw64/bin/clang64.exe /d/a/CombineRoms/CombineRoms/combine_roms.c -o D:/a/CombineRoms/CombineRoms/combine_roms.exe
       
     - name: Upload Build Artifact
       uses: actions/upload-artifact@v4
